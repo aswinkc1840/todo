@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<center>
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Edit your current task</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <form method="post">
+    {% csrf_token %}
+
+
+    {{ form.as_p }}<center>
+<input type="submit" value="change" >
+        </center>
+    </form>
+  </div>
+</div>
+
+</center>
+
+{% endblock %}
